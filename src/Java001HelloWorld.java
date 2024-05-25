@@ -5,5 +5,6 @@ public class Java001HelloWorld {
         System.out.println("this is the fifth test commit of the first day");
         System.out.println("this is the sixth commit of the first day");
         System.out.println("the seventh commit of the first day");
+        System.out.println("the eighth commit of the first day");
     }
 }
