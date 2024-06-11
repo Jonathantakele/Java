@@ -17,4 +17,6 @@ public class Exercise1 {
         System.out.print("Enter your age: ");
         System.out.println("Your age is: " + input.nextInt());
     }
+
 }
+
