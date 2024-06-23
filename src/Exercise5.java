@@ -37,14 +37,14 @@ public class Exercise5 {
         Scanner s = new Scanner(System.in);
         System.out.println("enter a number: ");
         int n = s.nextInt();
-
-        int sum = 1;
-        int i;
-        for ( i = 2; i <= n/2 ;i++)
-        if (n % i==0)
-            sum += i;
-
-        System.out.println(sum == 1? "prime" : "not prime");
+        boolean isPrime = true;
+        for ( int i = 2; i <= n/2 ;i++)
+            if (n % i==0)
+            {
+            isPrime = false;
+            break;
+            }
+        System.out.println(isPrime ? "prime" : "not prime");
 
     }
 
@@ -53,23 +53,27 @@ public class Exercise5 {
          int  n = s.nextInt();
          int  min = n;
          int  max = n;
+if (n>=0) {
+             while (true)
+              {
+               n = s.nextInt();
 
-        while(true){
-          n = s.nextInt();
+                 if (n < 0)
+                  break;
 
-          if(n < 0)
-              break;
+                max = n > max ? n : max;
+                min = n < min ? n : min;
 
-          if(n < min)
-              min = n;
+              }
+              System.out.println("max: " + max + " min: " + min);
+            }
+         else {
+                  System.out.println(n + " is invalid");
+             }
+     }
 
-          if (n > max)
-              max = n;
 
-        }
-        System.out.println("max: " + max + " min: " + min );
 
-    }
 }
 
 
