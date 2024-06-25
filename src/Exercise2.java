@@ -9,10 +9,11 @@ public class Exercise2 {
         nestedIfCondition(args);
         conditionalOperation(args);
         int i = 1;
-        int j = ++i;
+        int w = i--;
         int y = i++;
         int x = --i;
-        int w = i--;
+        int j = ++i;
+
         System.out.println("i is " + i);
         System.out.println("j is " + j);
         System.out.println("y is " + y);
@@ -23,7 +24,7 @@ public class Exercise2 {
     public static void exampleForCasting(String[] args) {
         double d1 = 3.5 + 4;
         double d2 = 2.4f;
-        long l1 = 100;
+        long l1 = 100L;
         int i1 = (int) 4.5;
         int i2 = (int) 8L;
         float f1 = (float) 4.5;
@@ -49,7 +50,7 @@ public class Exercise2 {
         int i1 = 5;
         i1 *= 5 + 2;
         System.out.println(i1);
-        System.out.println("this the number " + 2 + (2 + 2));
+        System.out.println("this is the number " + 2 + (2 + 2));
     }
 
     public static void evenOdd(String[] args) {
@@ -77,7 +78,7 @@ public class Exercise2 {
         } else if (a < b) {
             System.out.println("a is smaller");
         }
-        System.out.println(!name.isEmpty());
+        System.out.println(name.isEmpty());
     }
 
     public static void nestedIfCondition(String[] args) {

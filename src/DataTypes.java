@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class DataTypes {
     public static void main(String[] args) {
+        booleanStat(args);
         scannerWithArithmetic(args);
         concatenateStrings(args);
         scannerInteger(args);
         stringExample(args);
-        booleanStat(args);
         binaryNumber(args);
         float f1 = 4;
         double d1 =2.5;
@@ -43,15 +43,15 @@ public class DataTypes {
         System.out.println((text.toUpperCase()).toLowerCase());
         System.out.println(text.length());
         System.out.println(text.isBlank());
-        System.out.println(text.charAt(0));
-        System.out.println(text.lastIndexOf('i'));
+        System.out.println(text.charAt(8));
+        System.out.println(text.lastIndexOf('t'));
         System.out.println(text.indexOf('x'));
     }
 
     public static void concatenateStrings(String[] args) {
         String part1 = "my favorite number is ";
-        System.out.println(part1 + "5" + 3);
-        System.out.println("neso".concat(" acadami").concat("5"));
+        System.out.println(part1 + 5 + 3);
+        System.out.println("neso".concat(" acadami ").concat("5"));
     }
 
     public static void scannerInteger(String[] args) {

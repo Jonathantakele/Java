@@ -7,6 +7,7 @@ public class Exercise4 {
         doWhileLoop(args);
         whileLoop(args);
         forLoop(args);
+
         System.out.println("Enter a four digit number: ");
         Scanner s = new Scanner (System.in);
         int duk = s.nextInt();
@@ -54,8 +55,8 @@ public class Exercise4 {
     public static void forLoop(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter a number between 1 and 10: ");
-        int i;
-        for (i = 1; i <= 10; i++) {
+
+        for (int i = 1; i <= 10; i++) {
             i = s.nextInt();
             if (i > 1 && i < 10) {
                 System.out.print("is a number between 1 and 10. Thanks!!");
@@ -77,15 +78,17 @@ public class Exercise4 {
             }
             System.out.println();
         }
+        System.out.println();
 
     }
 
     public static void forLoopQuiz(String[] args) {
-        int i;
-        for (i=1;i<=10;i++){
+
+        for (int i=1;i<=10;i++){
             if (i%2==0)
                 System.out.print(i + " ");
         }
+        System.out.println();
     }
 }
 
